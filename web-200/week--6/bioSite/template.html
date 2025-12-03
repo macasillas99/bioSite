@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <title>bioSite Template — Ashlea</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" >
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+  <link rel="stylesheet" href="css/styles.css" >
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">ASHLEA</a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="hobbies.html" class="nav-link">Hobbies</a>
+      </nav>
+    </div>
+
+    <button class="access-toggle" type="button" aria-label="Toggle softer colors">
+      <i class="fas fa-eye"></i>
+    </button>
+  </header>
+
+  <main>
+    <section class="home-wrapper">
+      <h2 class="visually-hidden">Home Content</h2>
+      <div class="home-panel">
+        <div class="home-text">
+          <p>
+            Page content goes here. Use this template for the About and Hobbies pages so that the layout,
+            header, and footer stay consistent.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    bioSite Project · WEB 200 · Maxine Casillas
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.querySelector(".access-toggle");
+      if (toggle) {
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("soft-theme");
+          const icon = toggle.querySelector("i");
+          if (document.body.classList.contains("soft-theme")) {
+            icon.className = "fas fa-eye-slash";
+            toggle.setAttribute("aria-label", "Disable softer colors");
+          } else {
+            icon.className = "fas fa-eye";
+            toggle.setAttribute("aria-label", "Enable softer colors");
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <title>Ashlea &#9728; bioSite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" >
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+
+  <link rel="stylesheet" href="css/styles.css" >
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">ASHLEA</a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="hobbies.html" class="nav-link">Hobbies</a>
+      </nav>
+    </div>
+
+    <button class="access-toggle" type="button" aria-label="Toggle softer colors">
+      <i class="fas fa-eye"></i>
+    </button>
+  </header>
+
+  <main>
+    <section class="home-wrapper">
+        <h2 class="visually-hidden">Home Content</h2>
+      <!-- MAIN TEXT PANEL -->
+      <div class="home-panel">
+        <div class="home-text">
+          <div class="home-copy">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non pellentesque est, eu luctus turpis. Ut quis lobortis dui. Proin egestas, lorem sed tristique ultrices, sem justo porttitor ex, vel commodo erat augue a leo. Maecenas vel arcu in eros pulvinar elementum. Ut euismod eu eros eget molestie. Mauris erat dolor, condimentum faucibus diam tincidunt, venenatis imperdiet purus. Nam sed leo eget nisl tempor venenatis non id ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus quam justo, efficitur sit amet nisi ac, auctor posuere libero.
+            </p>
+            <p>
+              Sed nisi massa, pulvinar quis elementum non, dictum vitae velit. Ut nisl massa, facilisis quis lacus quis, accumsan posuere libero. Vivamus laoreet tellus sit amet mollis pretium. In purus ipsum, aliquet in tellus non, condimentum finibus felis. Aliquam luctus, libero eget dignissim molestie, tellus lectus fermentum lacus, ac hendrerit ante turpis id sem. Sed nec commodo massa, eget faucibus purus. Suspendisse luctus, risus ut efficitur tempus, velit risus posuere quam, vitae euismod elit arcu viverra ante.
+            </p>
+            <p>
+              Cras urna nisi, iaculis a ultricies in, sodales vitae elit. Cras mattis libero in orci aliquam, vel finibus sem auctor. Cras mi quam, finibus sit amet odio nec, aliquet bibendum sem. Vestibulum faucibus, ligula a pellentesque ultricies, nisl elit finibus nisi, nec consectetur nisl turpis sed odio. Nullam pellentesque nulla et tellus finibus ornare. Pellentesque efficitur consectetur nisl, eu gravida neque iaculis sit amet. Sed scelerisque augue id leo molestie porttitor. In non suscipit massa, bibendum malesuada augue. Class aptent taciti sociosqu ad litora torquent.          </p>
+          </div>
+          <!-- YouTube Playlist Section (PLEASE WORK oh my god i've spent literally 2 weeks on this my GOD why wont it work???) -->
+          <section class="youtube-section">
+            <h3><i class="fab fa-youtube"></i> Current Playlist Vibes</h3>
+
+            <!-- Hidden YouTube Player (audio source) -->
+            <div class="youtube-player-hidden">
+              <iframe
+                id="youtubePlayer"
+                width="1"
+                height="0"
+                src="https://www.youtube.com/embed/UCCyoocDxBA?enablejsapi=1&rel=0&modestbranding=1"
+                title="YouTube player"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <!-- Playlist Tracks -->
+            <div class="playlist-tracks">
+              <div class="track-item active" data-video="UCCyoocDxBA">
+                <div class="track-icon"><i class="fas fa-play"></i></div>
+                <div class="track-info">
+                  <div class="track-name">"Helena" – My Chemical Romance</div>
+                  <div class="track-artist">Three Cheers for Sweet Revenge (2004)</div>
+                </div>
+              </div>
+              <div class="track-item" data-video="kXYiU_JCYtU">
+                <div class="track-icon"><i class="fas fa-music"></i></div>
+                <div class="track-info">
+                  <div class="track-name">"The Middle" – Jimmy Eat World</div>
+                  <div class="track-artist">Bleed American (2001)</div>
+                </div>
+              </div>
+              <div class="track-item" data-video="aCyGvGEtOwc">
+                <div class="track-icon"><i class="fas fa-music"></i></div>
+                <div class="track-info">
+                  <div class="track-name">"Misery Business" – Paramore</div>
+                  <div class="track-artist">Riot! (2007)</div>
+                </div>
+              </div>
+              <div class="track-item" data-video="RRKJiM9Njr8">
+                <div class="track-icon"><i class="fas fa-music"></i></div>
+                <div class="track-info">
+                  <div class="track-name">"Welcome to the Black Parade" – My Chemical Romance</div>
+                  <div class="track-artist">The Black Parade (2006)</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- LEFT POLAROID -->
+      <figure class="polaroid polaroid-left">
+        <img src="images/polaroid1.jpg" alt="Ashlea in a candid moment with pop-punk style" >
+        <figcaption>img1: everyday pop-punk energy</figcaption>
+      </figure>
+
+      <!-- RIGHT POLAROID -->
+      <figure class="polaroid polaroid-right">
+        <img src="images/polaroid2.jpg" alt="Ashlea smiling in a band tee" >
+        <figcaption>img2: band-tee-in-the-wild</figcaption>
+      </figure>
+
+      <!-- NOW PLAYING BAR -->
+
+      <section class="now-playing">
+        <h2 class="visually-hidden">Now Playing</h2>
+          <div class="np-label">Now Playing</div>
+          <div class="np-bar"></div>
+            <div class="np-title">"Helena" – My Chemical Romance</div>
+            <div class="np-progress">
+             <div class="np-progress-fill"></div>
+            </div>
+            <button class="np-button" type="button" aria-label="Play / pause">
+             <i class="fas fa-play"></i>
+           </button>
+        </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    bioSite Project · WEB 200 · Maxine Casillas
+  </footer>
+
+  <!-- YouTube API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+  <script>
+    let player;
+    let isPlaying = false;
+
+    // Called by YouTube API when it's ready
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player("youtubePlayer");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Soft theme toggle
+      const toggle = document.querySelector(".access-toggle");
+      if (toggle) {
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("soft-theme");
+          const icon = toggle.querySelector("i");
+          if (document.body.classList.contains("soft-theme")) {
+            icon.className = "fas fa-eye-slash";
+            toggle.setAttribute("aria-label", "Disable softer colors");
+          } else {
+            icon.className = "fas fa-eye";
+            toggle.setAttribute("aria-label", "Enable softer colors");
+          }
+        });
+      }
+
+      const playButton   = document.querySelector(".np-button");
+      const npTitle      = document.querySelector(".np-title");
+      const progressFill = document.querySelector(".np-progress-fill");
+      const trackItems   = document.querySelectorAll(".track-item");
+
+      function setPlayIcon(playing) {
+        if (!playButton) return;
+        const icon = playButton.querySelector("i");
+        if (playing) {
+          icon.className = "fas fa-pause";
+          playButton.setAttribute("aria-label", "Pause track");
+          progressFill && progressFill.classList.add("playing");
+        } else {
+          icon.className = "fas fa-play";
+          playButton.setAttribute("aria-label", "Play track");
+          progressFill && progressFill.classList.remove("playing");
+        }
+      }
+
+      // Play/pause button
+      if (playButton) {
+        playButton.addEventListener("click", () => {
+          if (!player || typeof player.playVideo !== "function") return;
+
+          if (isPlaying) {
+            player.pauseVideo();
+            isPlaying = false;
+          } else {
+            player.playVideo();
+            isPlaying = true;
+          }
+          setPlayIcon(isPlaying);
+        });
+      }
+
+      // Clicking tracks
+      trackItems.forEach(item => {
+        item.addEventListener("click", () => {
+          const videoId = item.dataset.video;
+          const trackName = item.querySelector(".track-name")?.textContent || "";
+
+          // UI: active state
+          trackItems.forEach(t => t.classList.remove("active"));
+          item.classList.add("active");
+
+          // Update now playing text
+          if (npTitle) npTitle.textContent = trackName;
+
+          // Update icons in track list
+          trackItems.forEach(t => {
+            const icon = t.querySelector(".track-icon i");
+            if (!icon) return;
+            icon.className = t === item ? "fas fa-play" : "fas fa-music";
+          });
+
+          // Load & play video
+          if (player && typeof player.loadVideoById === "function") {
+            player.loadVideoById(videoId);
+            isPlaying = true;
+            setPlayIcon(true);
+          }
+        });
+      });
+
+      // Nav active state (simple)
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          navLinks.forEach(l => l.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+    });
+  </script>
+</body>
+</html>
